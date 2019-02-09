@@ -3,6 +3,16 @@
 @import "config/colors";
 @import "config/bootstrap_variables";
 
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";
 .card-category {
   // display: inline;
   // margin: 200px;
@@ -19,6 +29,10 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   list-style-type: none;
+}
+
+.container {
+  padding-left: 6%;
 }
 
 .card-product-infos {
@@ -102,6 +116,21 @@
   padding: 16px;
 }
 
+.btn-ghost-two {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+.btn-ghost-two:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
 .btn-ghost-one {
   color: #4A4A4A;
   border: 1px solid #4A4A4A;
@@ -183,14 +212,4 @@
 
 
 
-// External libraries
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-
-// Your CSS partials
-@import "layouts/index";
-@import "components/index";
-@import "pages/index";
 
