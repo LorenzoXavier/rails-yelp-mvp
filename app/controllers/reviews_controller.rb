@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
   def index
+    @reviews = Review.all
   end
 
   def show
@@ -8,6 +9,7 @@ class ReviewsController < ApplicationController
   def new
     @restaurant = Restaurant.find(params[:restaurant_id])
     @review = Review.new
+
   end
 
   def create
@@ -15,6 +17,7 @@ class ReviewsController < ApplicationController
     # we need `restaurant_id` to asssociate review with corresponding restaurant
     @review.restaurant = Restaurant.find(params[:restaurant_id])
     @review.save
+
   end
 
   def update

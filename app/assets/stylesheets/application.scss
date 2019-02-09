@@ -3,6 +3,186 @@
 @import "config/colors";
 @import "config/bootstrap_variables";
 
+.card-category {
+  // display: inline;
+  // margin: 200px;
+  background-size: cover;
+  background-position: center;
+  height: 459px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  list-style-type: none;
+}
+
+.card-product-infos {
+  width: 570px;
+  display: center;
+}
+
+.card-product-review {
+  padding: 20px;
+  overflow: hidden;
+  width: 850px;
+
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  display: inline-flex;
+}
+
+.card-product-review img {
+  height: 100%;
+    width: 260px;
+  object-fit: cover;
+}
+
+.card-product-review h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product-review p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+
+}
+
+.card-product-review .card-product-infos {
+  padding: 16px;
+}
+
+.card-product {
+  padding: 20px;
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 288px;
+  display: inline-flex;
+}
+
+.card-product img {
+  height: 100%;
+  // width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.btn-ghost-one {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+.btn-ghost-one:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  margin-left: 100px;
+}
+.btn-ghost:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  // display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  background: white;
+  padding: 8px 16px;
+  border: 1px solid rgb(235,235,235);
+  margin: 8px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.notification .notification-content {
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.notification p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.notification small {
+  color: #999999;
+  font-weight: bold;
+}
+
+.avatar {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.btn-ghost h2 {
+      margin-left: 100px;
+
+}
+
+
+
 // External libraries
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -13,3 +193,4 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
